@@ -2,6 +2,13 @@
 
 **Chrome browser extension that reminds you with doaa**
 
+**This app is dynamic so you can add whatever doaa that is missing here**
+
+# App name
+
+Arabic =>  ذكر الله
+English => Athkar
+
 # Application link
 
 Here is the application at chrome webstore.
@@ -20,7 +27,15 @@ Here is the application at chrome webstore.
 # Roadmap to code
 
 * Organize files
-* Better and clean code
+* Clean the code and make it more clear
+* Make this readme.md file in other languages like: Arabic, Turkish, Spanish ...
+
+
+# Application code stack
+Html
+Css
+This application is built using vanilla(native) JavaScript without any frameworks
+
 
 # Version
 

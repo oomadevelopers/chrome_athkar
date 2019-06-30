@@ -1,3 +1,7 @@
+# Version
+
+_Current version is 1.6_
+
 # About
 
 **Chrome browser extension that reminds you with doaa**
@@ -6,8 +10,8 @@
 
 # App name
 
-Arabic =>  ذكر الله
-English => Athkar
+* Arabic   : ذكر الله
+* English  : Athkar
 
 # Application link
 
@@ -36,11 +40,10 @@ Html
 Css
 This application is built using vanilla(native) JavaScript without any frameworks
 
+# How to contribute
 
-# Version
-
-_Current version is 1.6_
-
+###Reference
+https://developer.chrome.com/extensions/devguide
 
 # Contribution
 Each new developer who wants to contribute, can write his name with summary of his contributions

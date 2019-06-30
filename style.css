@@ -1,0 +1,93 @@
+/**
+ * Copyright (c) 2015 "Programmers Arab" Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+/* Clone the look and feel of "chrome://" pages. */
+html{
+    
+/*from : 
+ * 
+ http://grad3.ecoloniq.jp/
+ http://gradcolor.com/
+*/
+    
+/*
+    background: #5cd197;
+  background: linear-gradient(#5cd197, #293f50);
+  border-radius: 6px;
+*/
+/*    background: url(bubbles.jpg) no-repeat center center fixed; */
+/*    background:#657A91;*/
+    
+background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #005f68), color-stop(1.00, #69c2d5));
+background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-linear-gradient(#005f68, #69c2d5);
+background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -moz-linear-gradient(#005f68, #69c2d5);
+background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -o-linear-gradient(#005f68, #69c2d5);
+background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -ms-linear-gradient(#005f68, #69c2d5);
+background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, linear-gradient(#005f68, #69c2d5);
+
+
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    font: 84% Arial, sans-serif;
+}
+
+/*
+h1 { font-size: 156% }
+*/
+
+h1 img {
+  margin: 1px 5px 0 1px;
+  vertical-align: middle
+}
+
+h2 {
+  border-top: 1px solid #9cc2ef;
+  background-color: #d2d7e3;
+  padding: 3px 5px;
+  margin-top:20px;
+  font-size: 2em;
+  color: #ff6200;
+}
+
+.font-larg {
+    font-size: 1.7em;
+}
+.font-red {
+    color:red;
+}
+.cl-orange {
+    color: orange;
+}
+#header-main {
+    font-size: 2em;
+    color : white;
+}
+
+#options {
+    padding: 0px;
+    margin-top:0px;
+    margin-right: 10px;
+    /* width:500px; */
+    background-color:orange;
+    
+}
+
+#options input {
+    width:50px;
+    height: 30px;
+    background-color: #9eb1de;
+
+}
+
+#options select {
+    width:50px;
+    height: 30px;
+    background-color: #9eb1de;
+    
+}

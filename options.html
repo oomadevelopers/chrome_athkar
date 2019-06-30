@@ -1,0 +1,68 @@
+<!--
+ // Copyright (c) 2015 "Programmers Arab" Author. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+  An option page for configuring notifications.
+-->
+<!doctype html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <title>خيارات</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="options.js"></script>
+  </head>
+  <body >
+    <h1 id="header-main">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;برنامج للتذكير بالله عز وجل
+      <img src="128.png">
+         برنامج للتذكير بالله عز وجل
+    </h1>
+    <h2 >الإصدار : 1.3</h2>
+    <h2 >الخيارات</h2>
+    
+    <form id="options">  
+      <input type="checkbox" name="isActivated" checked>
+        
+      <span class="font-larg">ذكرني بالله سبحانه وتعالى كل: </span>
+          <select name="frequency">
+            <option>1</option>
+            <option>3</option>
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+            <option>25</option>
+            <option>30</option>
+            <option>35</option>
+            <option>40</option>
+            <option>50</option>
+            <option>60</option>
+            <option>75</option>
+            <option>90</option>
+            <option>120</option>
+            <option>140</option>
+            <option>160</option>
+          </select>
+      <span class="font-larg">&nbsp&nbspدقائق</span>
+        <br />
+    <!--<input type="checkbox" name="isTimerActivated" checked> -->
+    <span class="font-larg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspإظهار التذكير لمدة</span>
+        <select name="priority">
+            <option>8</option>
+            <option>25</option>
+          </select>
+      <span class="font-larg">&nbsp&nbsp ثواني ومن ثم يختفي تلقائيا </span>
+    <br /><br /><br /><br />
+    <span class="font-larg font-red">ملاحظة:</span><br/>
+    <span class="font-larg font-red">إذا لم تستطع إكمال قراءة التذكير فقم بوضع مؤشر الفارة عليه حتى لا يختفي</span>
+    
+    </form>
+    
+    <form name="tableForm"> <!-- Show all athkar to let user choose the relevant athkars for it-->
+        <div id="wrapperAthkar"></div>
+    </form>
+      
+  </body>
+</html>

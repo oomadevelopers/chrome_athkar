@@ -23,7 +23,8 @@ just after doing this steps, else you will not see any changes in localStorage v
 var AthkarObj ;
 
 function getDefaultAthkar() {
-    var defaultObj  = {
+
+    return {
      athkar : [
        
       {id:"0",  show:true, isPicture: true,  text:"صورة: ألا بذكر الله تطمئن القلوب" ,picName: "img_1.png"},
@@ -142,9 +143,7 @@ function getDefaultAthkar() {
        
     }//end-function
     
-    };// defaultObj
-    
-    return defaultObj;
+    };
 }
 
 
@@ -208,8 +207,8 @@ function show(p_notificationObject) {
     localStorage.readdefault = true;
   }
   else if( ( JSON.parse(localStorage.isInitialized) === true) && localStorage.version == 6 ) {
-    // 1. Here athkar object needs to retrieve the athkar that stored into localStorage athkar variable,
-    // 2. and after update the AthkarObj.athkar array in memory
+    // 1. Here athkar object needs to retrieve the athkar that is stored into localStorage' athkar variable,
+    // 2. and after updating the AthkarObj.athkar array in memory
     localStorage.readlocal = true;
     localStorage.readdefault = false;
     
@@ -249,7 +248,6 @@ function show(p_notificationObject) {
 
 
 
-
   // Real Test for notification support.
   if (window.Notification) {
     
@@ -260,7 +258,7 @@ function show(p_notificationObject) {
         show( AthkarObj.getTextToBeShow()); 
     }
   
-    var interval = 0;/*Display interval (in minutes) */
+    var interval = 0;/* Display interval (in minutes) */
     var textBody;
       
     setInterval(function() {
@@ -387,11 +385,3 @@ alert("t1 = " + t1);
 alert("t2 = " + t2);
 alert("t3 = " + t3);
 */
-
-/********************* Read Me -Copyright **********************/
-
-// Copyright (c) 2015 "Programmers Arab - chwarzmion" Author. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-

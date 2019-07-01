@@ -10,21 +10,23 @@
 -->
 <!doctype html>
 <html dir="rtl">
-
   <head>
     <meta charset="UTF-8">
     <title>خيارات</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="options.js"></script>
+    
   </head>
-
+  
   <body >
-    <h1 id="header-main">
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;برنامج للتذكير بالله عز وجل
-      <img src="128.png">
-         برنامج للتذكير بالله عز وجل
-    </h1>
-    <h2 >الإصدار : 1.3</h2>
+    <div id="headerBlock">
+      <img src="128.png" id="img-header">
+      <h1 id="main-header">
+           برنامج للتذكير بالله عز وجل
+      </h1>
+    </div>
+    
+    <div class=""></div>
+    <h2 id="version">الإصدار 1.6</h2>
     <h2 >الخيارات</h2>
     
     <form id="options">  
@@ -52,27 +54,70 @@
           </select>
       <span class="font-larg">&nbsp&nbspدقائق</span>
       <br />
-
-    <!--<input type="checkbox" name="isTimerActivated" checked> -->
-    <span class="font-larg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspإظهار التذكير لمدة</span>
-        <select name="priority">
-            <option>8</option>
-            <option>25</option>
+        
+      <!--<input type="checkbox" name="isTimerActivated" checked> -->
+      <span class="font-larg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspإظهار التذكير لمدة</span>
+          <select name="priority">
+              <option>8</option>
+              <option>25</option>
           </select>
       <span class="font-larg">&nbsp&nbsp ثواني ومن ثم يختفي تلقائيا </span>
-
-    <br /><br /><br /><br />
-
-    <span class="font-larg font-red">ملاحظة:</span>
-    <br/>
-
-    <span class="font-larg font-red">إذا لم تستطع إكمال قراءة التذكير فقم بوضع مؤشر الفارة عليه حتى لا يختفي</span>
     
-    </form>
-    
-    <form name="tableForm"> <!-- Show all athkar to let user choose the relevant athkars for it-->
-        <div id="wrapperAthkar"></div>
+      <br/><br/>
+      
+      <div id="athkarDiv"></div>
+      <div id="saveButtonWrapper">
+
+        <button type="button" id="id_saveButton">احفظ جميع التغييرات بالأعلى</button>
+        <div id="message">تم حفظ التغييرات بنجاح</div>
+        
+        <input type="text" id="id_newAthkar" name="newAthkar">
+        <button type="button" id="id_addButton">إضافة الذكر وحفظه</button>
+      </div>
+      
+      
+      <h2>تعليمات لإستخدام البرنامج</h2>
+      <ol>
+<!--<li><span class="font-larg"></span></li>-->
+
+<li><span class="font-larg">وظيفة المربعات الصغيرة على جهة اليمين من كل ذكر هي إتاحة حرية إظهار ذكر معين أو إخفائه, لذلك بعد النقر على أحد المربعات
+الصغيرة أو عدة مربعات, فعندها لكي تحفظ التغييرات التي قمت بها يجب عليك النقر على المستطيل الطويل مرة واحدة فقط
+</span></li>
+        
+        <li><span class="font-larg">عند النقر على الدائرة الحمراء لحذف ذكر معين ( أنت قمت بإضافته) سيتم حفظ التغيير مباشرة بدون الحاجة للنقر على المستطيل الطويل</span></li>
+
+<li><span class="font-larg">عند النقر على زر " إضافة الذكر وحفظه" سيتم إضافة الذكر الذي قمت بكتابته بالمستطيل الأبيض الفارغ وسيتم حفظه مباشرة لذلك ليس هنالك أي حاجة للنقر على زر المستطيل الطويل "  إحفظ جميع التغييرات بالأعلى",
+ وإنتبه إن كتبت ذكر طويل جدا فسيظهر لك فقط قسم من الذكر عند تذكيرك, وليس لنا الصلاحية لتغيير هذا بسبب المتصفح للأسف.
+</span></li>
+</span></li>
+<li><span class="font-larg">الصور بسبب حجمها يمكن أن تضايق بعد المستخدمين, 
+لذلك يمكن الضغط على المربعات الصغرى بجانب الأذكار التى كتبت بها أول كلمة " صورة " ومن بعدها إحفظ التغيير بواسطة النقر على المستطيل الطويل "  إحفظ جميع التغييرات بالأعلى" .
+</span></li>
+        <li><span class="font-larg">إذا لم تستطع إكمال قراءة التذكير فقم بوضع مؤشر الفارة عليه حتى لا يختفي</span></li>
+        <li><span class="font-larg">في بعض الأحيان لسبب ما لا تريد أن تظهر لك كل هذه التذكيرات, فبدلا من حذف البرنامج كله, يمكنك فقط الضغط على المربع الصغير في أول الصفحة وهكذا لن يتم تذكيرك بشيء حتى تقوم أنت بالنقر على المربع الصغير من جديد</span></li>
+        <li><span class="font-larg">لا يمكن حذف أول 32 ذكر ولكن لدى المستخدم إمكانية الضغط على المربعات الصغيرة من جهة اليمين لكل ذكر وهذه المربعات الصغيرة تتيح خيار ظهور أو إخفاء ذكر معين , وهذا يتم فقط من بعد النقر على المستطيل الطويل "احفظ جميع التغييرات بالأعلى" كما ذكرنا في الملاحظة رقم 1.</span></li>
+<li><span class="font-larg">حاليا لا يوجد مشاكل بالبرنامج بفضل الله ولكن لسبب معين أو لأخر من لا تظهر لديه الأدعية مع مربعات صغيرة فهنالك على ما يبدو مشكلة , لذلك عليك بحذف الإصدار السابق وتنصيب الإصدار الجديد من هنا:
+<a href="https://chrome.google.com/webstore/detail/%D8%B0%D9%83%D8%B1-%D8%A7%D9%84%D9%84%D9%87/mljdoedmkjiddmjhgmkaodlalbenceak">الإصدار 1.6 </a>
+مع ذلك حسب فحصنا للبرنامج حاليا لا يوجد مشاكل, فلذلك إن كان هنالك أي خطأ رجاء إعلامنا حتى نساعد الغير إن شاء الله تعالى.
+</span></li>
+
+      </ol>
+
+      <br />
+      <h2>ملاحظة:</h2>
+      <div id="footer">
+        
+        <span class="font-larg">ليعم الخير على الجميع يمكن نشر هذا البرنامج على فيسبوك وتويتر وأي وسيلة أخرى, وإن شاء الله بميزان حسناتكم.</span><br/>
+        <span class="font-larg">سيتم إن شاء الله رفع ملفات المشروع بعد فتح حساب على موقع github </span>
+        <span class="font-larg">, بحيث هذا يتيح الحرية لجميع المبرمجين بتطوير البرنامج ونشره بعدة لغات أخرى بإذن الله سبحانه وتعالى.</span>
+        <span class="font-larg">النشر سيتم إن شاء الله بالأشهر القريبة على موقع:</span><br/>
+        <span class="font-larg"><a href="https://github.com/chwarzmion" target="_blank" >https://github.com/chwarzmion</a></span><br/><br/>
+        <span class="font-larg">للإستفسار يمكن التواصل معنا على البريد الإلكتروني, رجاء وضع عنوان إسم البرنامج "ذكر الله" بالرسالة :</span><br/>
+        <span class="font-larg">developersarab@gmail.com</span>
+      </div>
     </form>
       
+      
+    <script src="options.js"></script>
   </body>
 </html>

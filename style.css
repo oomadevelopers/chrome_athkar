@@ -7,87 +7,209 @@
 /* Clone the look and feel of "chrome://" pages. */
 html{
     
-/*from : 
- * 
- http://grad3.ecoloniq.jp/
- http://gradcolor.com/
-*/
+    /*from : 
+     * 
+     http://grad3.ecoloniq.jp/
+     http://gradcolor.com/
+    */
+        
+    /*
+        background: #5cd197;
+      background: linear-gradient(#5cd197, #293f50);
+      border-radius: 6px;
+    */
+    /*    background: url(bubbles.jpg) no-repeat center center fixed; */
+    /*    background:#657A91;*/
+        
+    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #005f68), color-stop(1.00, #69c2d5));
+    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-linear-gradient(#005f68, #69c2d5);
+    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -moz-linear-gradient(#005f68, #69c2d5);
+    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -o-linear-gradient(#005f68, #69c2d5);
+    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -ms-linear-gradient(#005f68, #69c2d5);
+    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, linear-gradient(#005f68, #69c2d5);
     
-/*
-    background: #5cd197;
-  background: linear-gradient(#5cd197, #293f50);
-  border-radius: 6px;
-*/
-/*    background: url(bubbles.jpg) no-repeat center center fixed; */
-/*    background:#657A91;*/
     
-background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #005f68), color-stop(1.00, #69c2d5));
-background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-linear-gradient(#005f68, #69c2d5);
-background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -moz-linear-gradient(#005f68, #69c2d5);
-background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -o-linear-gradient(#005f68, #69c2d5);
-background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -ms-linear-gradient(#005f68, #69c2d5);
-background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, linear-gradient(#005f68, #69c2d5);
-
-
-}
-
-body {
-    width: 800px;
-    margin: 0 auto;
-    font: 84% Arial, sans-serif;
-}
-
-/*
-h1 { font-size: 156% }
-*/
-
-h1 img {
-  margin: 1px 5px 0 1px;
-  vertical-align: middle
-}
-
-h2 {
-  border-top: 1px solid #9cc2ef;
-  background-color: #d2d7e3;
-  padding: 3px 5px;
-  margin-top:20px;
-  font-size: 2em;
-  color: #ff6200;
-}
-
-.font-larg {
-    font-size: 1.7em;
-}
-.font-red {
-    color:red;
-}
-.cl-orange {
-    color: orange;
-}
-#header-main {
-    font-size: 2em;
-    color : white;
-}
-
-#options {
-    padding: 0px;
-    margin-top:0px;
-    margin-right: 10px;
-    /* width:500px; */
-    background-color:orange;
+    }
     
-}
-
-#options input {
-    width:50px;
-    height: 30px;
-    background-color: #9eb1de;
-
-}
-
-#options select {
-    width:50px;
-    height: 30px;
-    background-color: #9eb1de;
+    body {
+        width: 800px;
+        margin: 0 auto;
+        font: 84% Arial, sans-serif;
+    }
     
-}
+    #headerBlock {
+      text-align:center;
+    }
+    
+    #img-header {
+      margin-top:30px;
+      border-radius:20px;
+    }
+    
+    #main-header {
+        font-size: 2em;
+        color: white;
+    }
+    
+    #version {
+      color:crimson;
+      background-color:black;
+      display: inline-block; /* This container width would be adjustable automatically by the div's content*/
+      
+      margin:0px;
+      border-radius:20px;
+    }
+    
+    .clear {
+      clear:both;
+    }
+    
+    form {
+      margin-bottom:40px;
+    }
+    ol {
+      color:black;
+      margin:3px;
+    }
+    ol li:nth-child(even) { 
+      color: crimson ;
+    }
+    
+    h2 {
+      border-top: 1px solid #9cc2ef;
+      background-color: #d2d7e3;
+      padding: 3px 5px;
+      margin-top:20px;
+      font-size: 2em;
+      color: #ff6200;
+    }
+    
+    .font-larg {
+        font-size: 1.7em;
+    }
+    .font-red {
+        color:red;
+    }
+    .cl-orange {
+        color: orange;
+    }
+    
+    #options {
+        padding: 0px;
+        margin-top:0px;
+        margin-right: 10px;
+        /* width:500px; */
+        background-color:orange;
+        
+    }
+    
+    #options input {
+        width:25px;
+        height: 24px;
+        margin-left: 10px;
+        margin-top: 5px;
+        
+        background-color: #9eb1de;
+    
+    }
+    
+    #options select {
+        width:50px;
+        height: 30px;
+        background-color: #9eb1de;
+        
+    }
+    
+    .labelNotif {
+      font-size:1.3em;  
+    }
+    
+    
+    
+    
+    
+    #id_saveButton {
+      margin-top:15px;
+      margin-bottom:15px;
+      width:100%;
+      font-size:1.6em;
+      
+    }
+    
+    #id_saveButton:hover{
+      font-size:1.8em;
+      
+      cursor: pointer;
+      cursor: hand;
+      background-image:none;
+      background-color:chartreuse;
+      color:#800000;
+    }
+    
+    #options input[type="text"]{
+      width:610px;
+      height:40px;
+      font-size:1.3em;
+      font-weight:bold;
+      background-color:white;
+      display:inline;
+    }
+    
+    #id_addButton {
+      height:40px;
+      margin-top:15px;
+      margin-bottom:15px;
+      font-size:1.6em;
+      display:inline;
+    }
+    
+    #id_addButton:hover{
+      
+      cursor: pointer;
+      cursor: hand;
+      background-image:none;
+      background:chartreuse;
+      color:#800000;
+    }
+    
+    .singleAthkarDiv {
+      padding:2px;
+      word-wrap: break-word;
+    }
+    
+    
+    .deleteButton {
+        display:inline;
+        width:10px;
+        height:35px;
+        line-height: 1.428571429;
+        border-radius: 50%;
+        color:#f5f5f5;
+        background: red;
+        font-size:13px;
+        font-weight:bold;
+        margin-right:10px;
+    }
+    
+    .deleteButton:hover {
+      cursor: pointer;
+      cursor: hand;
+      
+    }
+    
+    #message {
+      text-align:center;
+      margin-top:15px;
+      width:100%;
+      
+      background-color:black;
+      color:red;
+      font-size:1.8em;
+      
+      display:none;
+    }
+    
+    #footer {
+      margin:6px;
+    }
+    

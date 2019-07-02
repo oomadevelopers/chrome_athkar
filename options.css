@@ -21,20 +21,20 @@ html{
     /*    background: url(bubbles.jpg) no-repeat center center fixed; */
     /*    background:#657A91;*/
         
-    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #005f68), color-stop(1.00, #69c2d5));
+    /* background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #005f68), color-stop(1.00, #69c2d5));
     background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -webkit-linear-gradient(#005f68, #69c2d5);
     background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -moz-linear-gradient(#005f68, #69c2d5);
     background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -o-linear-gradient(#005f68, #69c2d5);
     background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, -ms-linear-gradient(#005f68, #69c2d5);
-    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, linear-gradient(#005f68, #69c2d5);
+    background: url(http://grad3.ecoloniq.jp/sample/img/patterns_35.png) repeat, linear-gradient(#005f68, #69c2d5); */
     
-    
+    background-color:white;
     }
     
     body {
-        width: 800px;
+        width: 980px;
         margin: 0 auto;
-        font: 84% Arial, sans-serif;
+        font: 90% Arial, sans-serif;
     }
     
     #headerBlock {
@@ -48,7 +48,7 @@ html{
     
     #main-header {
         font-size: 2em;
-        color: white;
+        color: black;
     }
     
     #version {
@@ -99,7 +99,7 @@ html{
         margin-top:0px;
         margin-right: 10px;
         /* width:500px; */
-        background-color:orange;
+        background-color:white;
         
     }
     
